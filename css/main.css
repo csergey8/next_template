@@ -16,52 +16,39 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     color: #0001c5;
+}
+
+.container {
+    margin: 0 7%;
+    position: relative;
     letter-spacing: 0.06em;
 }
 
-div, p, span, a, input, button {
-    box-sizing: border-box;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jaapokkisubtract', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+    line-height: 1.25em;
 }
 
 p {
     line-height: 1.7em;
 }
 
-.jpk-font {
-    font-family: 'Jaapokkisubtract', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Jaapokkisubtract', sans-serif;
-    letter-spacing: 0.14em;
-    font-weight: normal;
-    line-height: 1.25em;
-}
-
-h2 {
-    letter-spacing: 0.04em;
-    margin: 0;
-}
-
-h3 {
-    letter-spacing: 0.03em;
-}
-
-.container {
-    margin: 0 7%;
-    position: relative;
+div, p, span, a, input, button {
+    box-sizing: border-box;
 }
 
 .btn {
-    font-family: 'Jaapokkisubtract', sans-serif;
+    font-family: 'Jaapokkisubtract', sans-serif; 
     font-size: 20px;
     color: #fff;
-    background: transparent;
+    background-color: transparent;
     border: 3px solid #fff;
     cursor: pointer;
     padding: 17px 0;
     width: 217px;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 }
 
 .btn:hover {
@@ -69,13 +56,13 @@ h3 {
     color: #0001c5;
 }
 
-/* Hero section */
+/* Hero Section */
 
 .header {
-    background: #0406bd url(../img/first_bg.jpg) no-repeat center bottom / cover;
-    color: #fff;
-    height:100vh;
-    box-shadow: 0 40px 190px rgba(33, 48, 99, 0.4);
+    background: #0406bd url('../img/first_bg.jpg') no-repeat center bottom / cover;
+    color: #fff; 
+
+    height: 100vh;
 }
 
 .header .container {
@@ -83,9 +70,10 @@ h3 {
 }
 
 .logo {
-    width: 48px;
+    font-family: 'Jaapokkisubtract', sans-serif;
     height: 48px;
-    background: #fff;
+    width: 48px;
+    background-color: #fff;
     color: #0000a0;
     font-size: 25px;
     text-transform: uppercase;
@@ -93,34 +81,38 @@ h3 {
     line-height: 48px;
     display: block;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
     position: absolute;
     top: 8%;
+    z-index: 2;
 }
 
 .logo:hover {
     border-radius: 8px;
+
 }
 
 .brah {
     background: #fff;
+    font-family: 'Jaapokkisubtract', sans-serif;
     font-size: 18px;
     color: #0304b9;
-    height: 184px;
-    width: 41px;
-    padding: 10px 15px;
+    height: 174px;
+    width: 42px;
+    padding: 15px;
+    padding-top: 10px;
     position: absolute;
-    left: 61%;
     top: 0;
-    line-height: 1.5em;
+    left: 61%;
+    line-height: 1.4em;
 }
 
 .hamburger {
-    width: 40px;
     position: absolute;
-    right: 0;
+    width: 40px;
     top: 8%;
-    float: right;
+    right: 0;
+    z-index: 10;
     cursor: pointer;
 }
 
@@ -138,7 +130,8 @@ h3 {
 }
 
 .hamburger span:nth-child(2) {
-    width: 75%
+    width: 75%;
+    
 }
 
 .hamburger span:nth-child(3) {
@@ -151,12 +144,13 @@ h3 {
 
 .offer {
     position: absolute;
-    left: 0;
     top: 50%;
     margin-top: -250px;
+    left: 0;
 }
 
 .offer__bg {
+    font-family: 'Jaapokkisubtract', sans-serif;
     font-size: 300px;
     color: #1b1cc4;
     position: absolute;
@@ -177,8 +171,8 @@ h3 {
     width: 29px;
     height: 5px;
     position: absolute;
-    right: 180px;
     top: -20px;
+    right: 170px;
 }
 
 .offer__text {
@@ -194,14 +188,15 @@ h3 {
 }
 
 .next {
+    font-family: 'Jaapokkisubtract', sans-serif;
     font-size: 300px;
-    width: 433px;
+    width: 440px;
     position: absolute;
-    left: 65%;
+    right: 5%;
     top: 50%;
-    margin-top: -180px;
+    margin-top: -210px;
     line-height: 0;
-    text-shadow: 15px 15px 0 #0309a1
+    text-shadow: 15px 15px 0 #0309a1;
 }
 
 .next span {
@@ -215,9 +210,10 @@ h3 {
 
 .scroll {
     display: block;
+    font-family: 'Jaapokkisubtract', sans-serif;
     font-size: 22px;
     border-right: 3px solid #fff;
-    height: 135px;
+    height: 136px;
     padding-right: 40px;
     padding-top: 20px;
     color: #fff;
@@ -226,132 +222,10 @@ h3 {
     position: absolute;
     right: 5%;
     bottom: 0;
-    transition: all 0.3s ease;
+    transition: all .3s linear;
 }
 
 .scroll:hover {
     background: #fff;
     color: #0000a0;
-}
-
-/* Services */
-
-.services {
-    padding-top: 166px;
-    padding-bottom: 180px;
-}
-
-.section-title {
-
-}
-
-.section-title__intro {
-    font-family: 'Jaapokkisubtract', sans-serif;
-    color: #a8a8e4;
-    font-size: 23px;
-    margin: 0;
-}
-
-.section-title__title {
-    font-size: 85px;
-    margin-left: 50px;
-    position: relative;
-}
-
-.section-title__title:after {
-    content: '';
-    display: inline-block;
-    background: #1e1fec;
-    width: 29px;
-    height: 5px;
-    margin-bottom: -15px;
-}
-
-.service {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 120px;
-}
-
-.service__item {
-    width: 20%;
-    border: 4px solid #0001c5;
-    display: block;
-    padding-left: 53px;
-    padding-top: 60px;
-    padding-bottom: 120px;
-    position: relative;
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-
-.service__icon {
-    font-size: 48px;
-    margin-bottom: 45px;
-    display: block;
-}
-
-.service__title {
-    font-size: 26px;
-}
-
-.service__more {
-    font-size: 31px;
-    width: 38px;
-    height: 37px;
-    background: #0001c5;
-    color: #fff;
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    bottom:0;
-}
-
-.service__index {
-    position: absolute;
-    font-family: 'Jaapokkisubtract', sans-serif;
-    font-size:23px;
-    color: #a8a8e4;
-    left: -55px;
-    top: 30px;
-}
-
-.service__item:hover {
-    background: #0001c5;
-    color: #fff;
-    box-shadow: 12px 12px 65px rgba(0,1,197,0.45);
-}
-
-/* Footer */
-
-.footer {
-    background: #ededf8;
-    padding: 160px 0;
-}
-
-.credits {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.credits__logo {
-    background: #0001c5;
-    color: #fff;
-    position: relative;
-    top: auto;
-}
-
-.credits__btn {
-    color: #0001c5;
-    border: 3px solid #0001c5;
-    font-size: 17px;
-    padding: 13px 0;
-    width: 172px;
-}
-
-.credits__up {
-    text-decoration: none;
 }
