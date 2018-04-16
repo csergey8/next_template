@@ -31,6 +31,15 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.25em;
 }
 
+h2 {
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+h3 {
+    letter-spacing: 0.03em;
+}
+
 p {
     line-height: 1.7em;
 }
@@ -63,6 +72,8 @@ div, p, span, a, input, button {
     color: #fff; 
 
     height: 100vh;
+
+    box-shadow: 0 40px 190px rgba(33, 48, 99, 0.4); 
 }
 
 .header .container {
@@ -228,4 +239,100 @@ div, p, span, a, input, button {
 .scroll:hover {
     background: #fff;
     color: #0000a0;
+}
+
+/* Services section */
+
+.services {
+    padding-top: 166px;
+}
+
+.services-title {
+
+}
+
+.services-title__intro {
+    font-family: 'Jaapokkisubtract', sans-serif;
+    color: #a8a8e4;
+    font-size: 23px;
+    margin: 0;
+}
+
+.services-title__title {
+    font-size: 85px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.services-title__title:after {
+    content: '';
+    display: inline-block;
+    background: #1e1fec;
+    width: 29px;
+    height: 5px;
+    margin-bottom: -15px;
+
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+
+.services-list__item {
+    width: 20%;
+    border: 4px solid #0001c5; 
+    display: block;
+    padding-left: 53px;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    position: relative;
+    transition: all .2s linear;
+}
+
+.services-list__item:hover {
+    background: #0001c5;
+    color: #fff;
+    box-shadow: 12px 12px 65px rgba(0, 1, 197, 0.45);
+
+}
+
+.services-list__item:hover .services-list__more {
+    background-color: #fff;
+    color: #0001c5;
+}
+
+.services-list__icon {
+    font-size: 48px;
+    margin-bottom: 45px;
+    display: block;
+}
+
+.services-list__title {
+    font-size: 26px;
+}
+
+.services-list__more {
+    font-family: 'Jaapokkisubtract', sans-serif;
+    font-size: 31px;
+    position: absolute;
+    display: block;
+    text-align: center; 
+    bottom: 0;
+    right: 0;
+    width: 34px;
+    height: 37px;
+    background-color: #0001c5;
+    color: #fff;
+}
+
+.services-list__index {
+    font-family: 'Jaapokkisubtract', sans-serif;
+    position: absolute;
+    font-size: 23px;
+    color: #a8a8e4;
+    left: -55px;
+    top: 30px;
 }
