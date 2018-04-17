@@ -336,3 +336,44 @@ div, p, span, a, input, button {
     left: -55px;
     top: 30px;
 }
+
+/* Footer */
+
+.footer {
+    background-color: #ededf8;
+    padding: 160px 0;
+    margin-top: 185px;
+}
+
+.footer-credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer {
+    background-color: #0001c5;
+    color: #fff;
+    position: relative;
+    top: auto;
+}
+
+.contact__btn {
+    color: #0001c5;
+    border: 3px solid #0001c5;
+    font-size: 17px;
+    padding: 13px 0;
+    width: 172px; 
+}
+
+.footer-credits__tel {
+
+}
+
+.footer-credits__arrow {
+    font-size: 24px;
+}
+
+.footer-credits__arrow a {
+    text-decoration: none;
+}
